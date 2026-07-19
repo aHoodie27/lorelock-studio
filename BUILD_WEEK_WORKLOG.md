@@ -26,12 +26,13 @@ The Blood Helix project had a project-specific set of canon documents, prompt sh
 - Connected a repository-scoped Render deployment on the free judge-accessible tier.
 - Published the application at `https://lorelock-studio.onrender.com`.
 - Verified the production build, health endpoint, bundled proof case, and rejected-drift evidence contract against the public service.
+- Added a dedicated OpenAI project key to Render's encrypted environment settings; the credential is not stored in source control or local project files.
+- Verified the public live GPT-5.6 path end to end: `/api/health` reports `live: true`, `/api/plan` returned a structured five-shot plan, and `/api/validate` returned a structured continuity verdict with evidence ID `LL-S01-CONTINUITY-001`.
+- Confirmed the public hostname remained healthy after the environment-triggered rebuild and initial edge propagation.
 
 ## Remaining submission milestones
 
-- Exercise and tune the live GPT-5.6 path with representative inputs.
 - Add one approved and one intentionally drifted visual proof case.
-- Confirm the new public hostname remains stable after initial edge propagation.
 - Capture a sub-three-minute public YouTube demo.
 - Add final screenshots, architecture summary, and submission copy.
 - Record the Codex `/feedback` session ID used for the majority of core functionality.
