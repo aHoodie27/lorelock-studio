@@ -20,11 +20,18 @@ The Blood Helix project had a project-specific set of canon documents, prompt sh
 - Added one-click drifted/canon-safe proof-case switching for the judge demo.
 - Added browser-persistent evidence ledger storage and downloadable JSON evidence artifacts.
 
+## July 19, 2026 — Public release
+
+- Created the public GitHub repository and pushed the standalone LoreLock Studio source.
+- Connected a repository-scoped Render deployment on the free judge-accessible tier.
+- Published the application at `https://lorelock-studio.onrender.com`.
+- Verified the production build, health endpoint, bundled proof case, and rejected-drift evidence contract against the public service.
+
 ## Remaining submission milestones
 
 - Exercise and tune the live GPT-5.6 path with representative inputs.
 - Add one approved and one intentionally drifted visual proof case.
-- Deploy a stable judge-accessible instance.
+- Confirm the new public hostname remains stable after initial edge propagation.
 - Capture a sub-three-minute public YouTube demo.
 - Add final screenshots, architecture summary, and submission copy.
 - Record the Codex `/feedback` session ID used for the majority of core functionality.

@@ -6,6 +6,8 @@ LoreLock converts a story bible and scene into a structured canon map and shot p
 
 Built for the **OpenAI Build Week 2026 — Work & Productivity** track with Codex and GPT-5.6.
 
+**Live demo:** [lorelock-studio.onrender.com](https://lorelock-studio.onrender.com)
+
 ## Why it exists
 
 Generative tools can make a strong individual frame while silently breaking the story across a sequence. A character's hair changes, an ability migrates to the wrong owner, a location loses its defining geometry, or a dramatic beat becomes a different action. Creative teams need a continuity gate, not another blank prompt box.
@@ -22,6 +24,8 @@ LoreLock makes canon executable.
 6. Record the result in a visible production ledger.
 
 The bundled Blood Helix proof case runs without credentials in deterministic demo mode. Add an API key to activate the live GPT-5.6 path.
+
+The public judge build defaults to deterministic demo mode so the complete proof case remains testable without credentials or usage limits.
 
 ## Stack
 
