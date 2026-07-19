@@ -124,7 +124,7 @@ function App() {
 
   function loadSafeCandidate() {
     setCandidateDescription(
-      'Mara faces forward in her charcoal pressure suit with copper seams, long silver braid and amber visor visible. The beacon key on her left glove projects a blue triangular route map toward the submerged airlock. Kestrel-9 remains behind her with red scan light only. Mara is unarmed.',
+      'Cinematic vertical science-fiction medium close-up in the drowned Meridian greenhouse core, favoring Mara Venn\'s raised left glove and the flooded floor. Mara has warm brown skin, a long silver braid, amber visor, compact oxygen pack, and charcoal pressure suit with copper seams. The triangular blue beacon key mounted on her left glove unfolds a blue triangular route map directly over the flooded floor toward the submerged airlock. Behind her, Kestrel-9 is a white spherical survey drone with three folding fins and three red lens clusters, emitting red scan light only. Fractured glass arches, zero-gravity vines, floating water spheres, and teal emergency strips remain visible. Mara is unarmed; no physical stranger and no dialogue overlays.',
     );
     setResult(null);
   }

@@ -70,7 +70,7 @@ export async function validateCandidate(args: {
     input: [
       {
         role: 'system',
-        content: 'You are a strict but practical continuity QA director. Compare the candidate against locked canon and the selected shot. Fail material identity, ownership, wardrobe, location, or story-beat drift. Do not claim to see details that are absent. Provide a corrected production prompt that preserves the intended composition.',
+        content: 'You are a strict but practical continuity QA director. Compare the candidate against locked canon and the selected shot. Fail material identity, ownership, wardrobe, location, or story-beat drift. Do not claim to see details that are absent. Provide a corrected production prompt that preserves the intended composition. continuityScore must be an integer from 0 to 100 (for example, use 87 rather than 0.87). Approve a text-only candidate when it explicitly satisfies every mustShow and mustAvoid constraint; do not demand invisible details beyond the supplied shot specification.',
       },
       { role: 'user', content: userContent },
     ],
