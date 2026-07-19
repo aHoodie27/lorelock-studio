@@ -63,7 +63,7 @@ export const demoPlan: ProductionPlan = {
     {
       id: 'SHOT-02',
       beat: 'Mara raises her left glove and reveals the route toward the submerged airlock.',
-      framing: 'Centered vertical medium shot with the projection cutting across the flooded floor.',
+      framing: 'Vertical medium close-up favoring Mara\'s raised left glove and the flooded floor below.',
       mustShow: ['Beacon key on Mara\'s left glove', 'Blue triangular route map', 'Submerged airlock', 'Copper suit seams'],
       mustAvoid: ['Blue light originating from Kestrel-9', 'Beacon on the right hand', 'Any weapon'],
       continuityRisk: 'high',
