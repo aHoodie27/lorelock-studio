@@ -23,7 +23,7 @@ LoreLock makes canon executable.
 5. Receive an `approved`, `revise`, or `rejected` verdict with evidence.
 6. Record the result in a visible production ledger.
 
-The bundled original story, **The Glass Meridian**, runs without credentials in deterministic demo mode. Add an API key to activate the live GPT-5.6 path.
+The bundled original story, **The Glass Meridian**, is a complete cause-and-effect proof scene: a courier must recover her failing colony's last seed archive before an orbital greenhouse breaks apart; a blocked corridor forces her to decrypt a new route; an impossible reflection reveals a hidden structural hazard; and her drone confirms it before she unlocks the vault path. It runs without credentials in deterministic demo mode. Add an API key to activate the live GPT-5.6 path.
 
 The public judge build defaults to deterministic demo mode so the complete proof case remains testable without credentials or usage limits.
 

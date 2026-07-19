@@ -7,7 +7,7 @@ type LedgerEntry = ValidationResult & { shotId: string; createdAt: string };
 const ledgerStorageKey = 'lorelock-evidence-ledger-v1';
 
 const initialCandidate =
-  'Kestrel-9 projects the blue route map while Mara wears a white coat with loose black hair and holds a laser sword.';
+  'Inside the dying Meridian greenhouse, Kestrel-9 projects the blue route map toward the seed vault while Mara wears a white coat with loose black hair and holds a laser sword.';
 
 function statusLabel(status: 'pass' | 'warn' | 'fail') {
   return status === 'pass' ? 'Pass' : status === 'warn' ? 'Watch' : 'Drift';
@@ -71,7 +71,9 @@ function App() {
       if (!response.ok) throw new Error(payload.error || 'Planning failed');
       setPlan(payload.plan);
       setMode(payload.mode);
-      const proofShot = payload.plan.shots.find((shot: ProductionPlan['shots'][number]) => shot.continuityRisk === 'high');
+      const proofShot = payload.plan.shots.find((shot: ProductionPlan['shots'][number]) =>
+        /blue|beacon|route map|left glove|seed.?vault/i.test(`${shot.beat} ${shot.mustShow.join(' ')}`),
+      ) || payload.plan.shots.find((shot: ProductionPlan['shots'][number]) => shot.continuityRisk === 'high');
       setSelectedShotId(proofShot?.id || payload.plan.shots[0]?.id || '');
     } catch (caught) {
       setError(caught instanceof Error ? caught.message : 'Planning failed');
@@ -124,7 +126,7 @@ function App() {
 
   function loadSafeCandidate() {
     setCandidateDescription(
-      'Cinematic vertical science-fiction medium close-up in the drowned Meridian greenhouse core, favoring Mara Venn\'s raised left glove and the flooded floor. Mara has warm brown skin, a long silver braid, amber visor, compact oxygen pack, and charcoal pressure suit with copper seams. The triangular blue beacon key mounted on her left glove unfolds a blue triangular route map directly over the flooded floor toward the submerged airlock. Behind her, Kestrel-9 is a white spherical survey drone with three folding fins and three red lens clusters, emitting red scan light only. Fractured glass arches, zero-gravity vines, floating water spheres, and teal emergency strips remain visible. Mara is unarmed; no physical stranger and no dialogue overlays.',
+      'Cinematic vertical science-fiction medium close-up in the dying Meridian greenhouse core. With Orison\'s last viable seed archive at stake, Mara Venn raises her left glove beside a fallen glass arch. Mara has warm brown skin, a long silver braid, amber visor, compact oxygen pack, and charcoal pressure suit with copper seams. The triangular blue beacon key on her left glove unfolds a blue route around the blocked corridor toward the submerged seed-vault airlock. Behind her, Kestrel-9 is a white spherical survey drone with three folding fins and three red lens clusters, emitting red scan light only. Fractured glass arches, zero-gravity vines, floating water spheres, and teal emergency strips remain visible. Mara is unarmed; no physical stranger and no dialogue overlays.',
     );
     setResult(null);
   }

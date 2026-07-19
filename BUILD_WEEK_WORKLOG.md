@@ -14,6 +14,7 @@ The earlier workflow had project-specific canon documents, prompt sheets, a prod
 - Added generic Zod contracts for canon entities, shot plans, checks, and verdicts.
 - Added GPT-5.6 Responses API planning and multimodal validation paths.
 - Added the original science-fiction story **The Glass Meridian** as a deterministic proof case for no-credential judge testing.
+- Strengthened **The Glass Meridian** into a complete cause-and-effect proof scene with explicit stakes, mission logic, obstacle, warning, confirmation, reroute, and payoff. Tightened deterministic validation so omissions of story-critical evidence return `revise` instead of a false approval.
 - Added a complete interface for canon input, shot selection, candidate inspection, corrections, and evidence ledger.
 - Added three contract/behavior tests.
 - Verified TypeScript, tests, production build, server health, plan endpoint, validation endpoint, and static serving.

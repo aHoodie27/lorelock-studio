@@ -14,6 +14,13 @@ test('demo validator rejects signal ownership drift', () => {
 });
 
 test('demo validator approves canon-safe candidates', () => {
-  const result = demoValidation('Mara projects a blue route map from her left glove while Kestrel scans with red light.');
+  const result = demoValidation('Mara projects a blue route map from the beacon on her left glove toward the submerged seed-vault airlock while Kestrel scans the blocked corridor with red light.');
   assert.equal(result.verdict, 'approved');
+});
+
+test('demo validator requests revision when the shot omits story-critical evidence', () => {
+  const result = demoValidation('Mara stands quietly inside a dark greenhouse.');
+  assert.equal(validationResultSchema.safeParse(result).success, true);
+  assert.equal(result.verdict, 'revise');
+  assert.match(result.summary, /omits required visual evidence/i);
 });
