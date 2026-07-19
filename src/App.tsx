@@ -7,7 +7,7 @@ type LedgerEntry = ValidationResult & { shotId: string; createdAt: string };
 const ledgerStorageKey = 'lorelock-evidence-ledger-v1';
 
 const initialCandidate =
-  'Kestrel-9 projects the blue route map while Mara wears a white coat with loose black hair and holds a laser sword. A second traveler stands physically beside her.';
+  'Kestrel-9 projects the blue route map while Mara wears a white coat with loose black hair and holds a laser sword.';
 
 function statusLabel(status: 'pass' | 'warn' | 'fail') {
   return status === 'pass' ? 'Pass' : status === 'warn' ? 'Watch' : 'Drift';
@@ -71,7 +71,8 @@ function App() {
       if (!response.ok) throw new Error(payload.error || 'Planning failed');
       setPlan(payload.plan);
       setMode(payload.mode);
-      setSelectedShotId(payload.plan.shots[0]?.id || '');
+      const proofShot = payload.plan.shots.find((shot: ProductionPlan['shots'][number]) => shot.continuityRisk === 'high');
+      setSelectedShotId(proofShot?.id || payload.plan.shots[0]?.id || '');
     } catch (caught) {
       setError(caught instanceof Error ? caught.message : 'Planning failed');
     } finally {
@@ -123,7 +124,7 @@ function App() {
 
   function loadSafeCandidate() {
     setCandidateDescription(
-      'Mara faces forward in her charcoal pressure suit, long silver braid and amber visor visible. The key on her left glove projects a blue triangular route map. Kestrel-9 scans the vines with red light, while the stranger appears only as a silhouette reflected in fractured glass.',
+      'Mara faces forward in her charcoal pressure suit with copper seams, long silver braid and amber visor visible. The beacon key on her left glove projects a blue triangular route map toward the submerged airlock. Kestrel-9 remains behind her with red scan light only. Mara is unarmed.',
     );
     setResult(null);
   }
