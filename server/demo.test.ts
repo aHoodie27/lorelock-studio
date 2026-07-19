@@ -7,13 +7,13 @@ test('demo plan satisfies the production contract', () => {
   assert.equal(productionPlanSchema.safeParse(demoPlan).success, true);
 });
 
-test('demo validator rejects trait ownership drift', () => {
-  const result = demoValidation('Roca glows with a tiger aura and rushes Seth with a sword.');
+test('demo validator rejects signal ownership drift', () => {
+  const result = demoValidation('Kestrel projects the blue route map while Mara carries a laser sword.');
   assert.equal(validationResultSchema.safeParse(result).success, true);
   assert.equal(result.verdict, 'rejected');
 });
 
 test('demo validator approves canon-safe candidates', () => {
-  const result = demoValidation('Roca stays calm and unlit while Seth passes with Tiger and Hare energy attached only to Seth.');
+  const result = demoValidation('Mara projects a blue route map from her left glove while Kestrel scans with red light.');
   assert.equal(result.verdict, 'approved');
 });

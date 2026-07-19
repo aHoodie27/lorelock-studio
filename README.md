@@ -23,7 +23,7 @@ LoreLock makes canon executable.
 5. Receive an `approved`, `revise`, or `rejected` verdict with evidence.
 6. Record the result in a visible production ledger.
 
-The bundled Blood Helix proof case runs without credentials in deterministic demo mode. Add an API key to activate the live GPT-5.6 path.
+The bundled original story, **The Glass Meridian**, runs without credentials in deterministic demo mode. Add an API key to activate the live GPT-5.6 path.
 
 The public judge build defaults to deterministic demo mode so the complete proof case remains testable without credentials or usage limits.
 
@@ -85,7 +85,7 @@ The test suite verifies the structured proof-case contract plus both drift rejec
 
 ## Build Week eligibility and new work
 
-Blood Helix existed before the challenge as a project-specific production pipeline. **LoreLock Studio is the meaningful post–July 13 extension** that turns those lessons into a generic, independently runnable product.
+An earlier creator-specific production workflow existed before the challenge. **LoreLock Studio is the meaningful post–July 13 extension** that turns those lessons into a generic, independently runnable product with entirely original demo IP.
 
 New Build Week work includes:
 
@@ -106,8 +106,8 @@ The recommended sub-three-minute demo:
 
 1. Explain continuity drift in one sentence.
 2. Compile the bundled canon and scene.
-3. Select the high-risk Roca shot.
-4. Submit the intentionally incorrect candidate: wrong hair, stolen Tiger aura, and a sword.
+3. Select the high-risk beacon-map shot.
+4. Submit the intentionally incorrect candidate: wrong hair and wardrobe, a stolen blue signal, and a laser sword.
 5. Show LoreLock reject it with exact evidence and a corrected prompt.
 6. Load the canon-safe version and show approval.
 7. End on the evidence ledger.
@@ -121,4 +121,4 @@ The recommended sub-three-minute demo:
 
 ## License
 
-MIT. The bundled proof-case story text remains © its creator and is included for demonstration; it is not licensed as reusable story IP.
+MIT. The bundled proof-case story was created specifically for LoreLock Studio and is included with the project.

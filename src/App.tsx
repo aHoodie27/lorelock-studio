@@ -7,7 +7,7 @@ type LedgerEntry = ValidationResult & { shotId: string; createdAt: string };
 const ledgerStorageKey = 'lorelock-evidence-ledger-v1';
 
 const initialCandidate =
-  'Roca stands in the ring with short straight hair and a bright tiger aura around his body. He draws a sword and charges Seth while the students watch.';
+  'Kestrel-9 projects the blue route map while Mara wears a white coat with loose black hair and holds a laser sword. A second traveler stands physically beside her.';
 
 function statusLabel(status: 'pass' | 'warn' | 'fail') {
   return status === 'pass' ? 'Pass' : status === 'warn' ? 'Watch' : 'Drift';
@@ -123,7 +123,7 @@ function App() {
 
   function loadSafeCandidate() {
     setCandidateDescription(
-      'Roca stays unlit and calm in his fitted dark Helix tracksuit, tied-back dreadlocks and cross earrings visible. Seth streaks past with Tiger pressure and a Hare afterimage attached only to Seth. Roca turns one shoulder by inches without counterattacking.',
+      'Mara faces forward in her charcoal pressure suit, long silver braid and amber visor visible. The key on her left glove projects a blue triangular route map. Kestrel-9 scans the vines with red light, while the stranger appears only as a silhouette reflected in fractured glass.',
     );
     setResult(null);
   }

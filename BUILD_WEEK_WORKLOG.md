@@ -1,19 +1,19 @@
 # OpenAI Build Week Worklog
 
-This record distinguishes the LoreLock Studio submission from the earlier Blood Helix production workflow, as required for pre-existing projects that are meaningfully extended during the submission period.
+This record distinguishes the LoreLock Studio submission from an earlier creator-specific production workflow, as required for pre-existing projects that are meaningfully extended during the submission period.
 
 ## Before the submission period
 
-The Blood Helix project had a project-specific set of canon documents, prompt sheets, a production ledger, preflight checks, panel generation, and manual/evidence-backed QA. It was not a reusable web product, did not accept arbitrary canon or scenes, and did not expose a generic continuity-analysis experience.
+The earlier workflow had project-specific canon documents, prompt sheets, a production ledger, preflight checks, panel generation, and manual/evidence-backed QA. It was not a reusable web product, did not accept arbitrary canon or scenes, and did not expose a generic continuity-analysis experience.
 
 ## July 17, 2026 — Product creation
 
-- Paused the Blood Helix automatic build and nightly audit to preserve production state.
+- Paused the earlier production workflow to preserve its state during Build Week.
 - Defined LoreLock Studio as a generic continuity engine for visual creators.
 - Created the standalone React/Vite/Express application.
 - Added generic Zod contracts for canon entities, shot plans, checks, and verdicts.
 - Added GPT-5.6 Responses API planning and multimodal validation paths.
-- Added a deterministic Blood Helix proof case for no-credential judge testing.
+- Added the original science-fiction story **The Glass Meridian** as a deterministic proof case for no-credential judge testing.
 - Added a complete interface for canon input, shot selection, candidate inspection, corrections, and evidence ledger.
 - Added three contract/behavior tests.
 - Verified TypeScript, tests, production build, server health, plan endpoint, validation endpoint, and static serving.
